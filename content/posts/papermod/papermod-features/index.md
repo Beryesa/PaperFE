@@ -7,7 +7,7 @@ aliases: ["/papermod-features"]
 tags: ["PaperMod", "Docs"]
 author: ["Aditya Telange"]
 social:
-  fediverse_creator: "@adityatelange@mastodon.social"
+  fediverse_creator: "@Beryesa@mastodon.social"
 ---
 
 ### Intro
@@ -92,7 +92,7 @@ summary: archives
 
 **Note:** Archives Layout does not support Multilingual Month Translations.
 
-ex: [archives.md](https://raw.githubusercontent.com/adityatelange/hugo-PaperMod/exampleSite/content/archives.md)
+ex: [archives.md](https://raw.githubusercontent.com/Beryesa/PaperFE/exampleSite/content/archives.md)
 
 ---
 
@@ -127,7 +127,7 @@ params:
 
 ### Profile Mode
 
-![profile](https://raw.githubusercontent.com/adityatelange/hugo-PaperMod/exampleSite/content/posts/papermod/papermod-features/images/profile.jpg)
+![profile](https://raw.githubusercontent.com/Beryesa/PaperFE/exampleSite/content/posts/papermod/papermod-features/images/profile.jpg)
 
 Shows Index/Home page as Full Page with Social Links and Image
 
@@ -191,7 +191,7 @@ To hide a particular page from being searched, add it in post's frontmatter
 searchHidden: true
 ```
 
-ex: [search.md](https://raw.githubusercontent.com/adityatelange/hugo-PaperMod/exampleSite/content/search.md)
+ex: [search.md](https://raw.githubusercontent.com/Beryesa/PaperFE/exampleSite/content/search.md)
 
 > Search Page also has Key bindings:
 >

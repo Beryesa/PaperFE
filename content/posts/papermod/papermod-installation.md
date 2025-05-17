@@ -11,7 +11,7 @@ cover:
   image: images/papermod-cover.png
   hiddenInList: true
 social:
-  fediverse_creator: "@adityatelange@mastodon.social"
+  fediverse_creator: "@Beryesa@mastodon.social"
 ---
 
 > - **We'll be using `yml/yaml` format for all examples down below, it is recommend to use `yaml` over `toml` as it is easier to read.**
@@ -45,7 +45,7 @@ After you have created a new site, follow the below steps to add **PaperMod**
 **INSTALL** : Inside the folder of your Hugo site `MyFreshWebsite`, run:
 
 ```bash
-git clone https://github.com/adityatelange/hugo-PaperMod themes/PaperMod --depth=1
+git clone https://github.com/Beryesa/PaperFE themes/PaperMod --depth=1
 ```
 
 You may use ` --branch v7.0` to end of above command if you want to stick to specific release.
@@ -64,7 +64,7 @@ git pull
 **INSTALL** : Inside the folder of your Hugo site `MyFreshWebsite`, run:
 
 ```bash
-git submodule add --depth=1 https://github.com/adityatelange/hugo-PaperMod.git themes/PaperMod
+git submodule add --depth=1 https://github.com/Beryesa/PaperFE.git themes/PaperMod
 git submodule update --init --recursive # needed when you reclone your repo (submodules may not get cloned automatically)
 ```
 
@@ -85,14 +85,14 @@ Download PaperMod source as Zip from Github Releases and extract in your themes 
 
 Direct Links:
 
-- [Master Branch (Latest)](https://github.com/adityatelange/hugo-PaperMod/archive/master.zip)
-- [v7.0](https://github.com/adityatelange/hugo-PaperMod/archive/v7.0.zip)
-- [v6.0](https://github.com/adityatelange/hugo-PaperMod/archive/v6.0.zip)
-- [v5.0](https://github.com/adityatelange/hugo-PaperMod/archive/v5.0.zip)
-- [v4.0](https://github.com/adityatelange/hugo-PaperMod/archive/v4.0.zip)
-- [v3.0](https://github.com/adityatelange/hugo-PaperMod/archive/v3.0.zip)
-- [v2.0](https://github.com/adityatelange/hugo-PaperMod/archive/v2.0.zip)
-- [v1.0](https://github.com/adityatelange/hugo-PaperMod/archive/v1.0.zip)
+- [Master Branch (Latest)](https://github.com/Beryesa/PaperFE/archive/master.zip)
+- [v7.0](https://github.com/Beryesa/PaperFE/archive/v7.0.zip)
+- [v6.0](https://github.com/Beryesa/PaperFE/archive/v6.0.zip)
+- [v5.0](https://github.com/Beryesa/PaperFE/archive/v5.0.zip)
+- [v4.0](https://github.com/Beryesa/PaperFE/archive/v4.0.zip)
+- [v3.0](https://github.com/Beryesa/PaperFE/archive/v3.0.zip)
+- [v2.0](https://github.com/Beryesa/PaperFE/archive/v2.0.zip)
+- [v1.0](https://github.com/Beryesa/PaperFE/archive/v1.0.zip)
 
 {{</ collapse >}}
 
@@ -113,7 +113,7 @@ hugo mod init YOUR_OWN_GIT_REPOSITORY
 ```go {linenos=true}
 module:
   imports:
-  - path: github.com/adityatelange/hugo-PaperMod
+  - path: github.com/Beryesa/PaperFE
 ```
 
 **UPDATE**:
@@ -137,7 +137,7 @@ theme: ["PaperMod"]
 ### Next up - Customizing PaperMod to suit your preferences.
 
 - Your site will be blank after you set up for the very first time.
-- You may go through this website's source code - [PaperMod's exampleSite's source](https://github.com/adityatelange/hugo-PaperMod/tree/exampleSite)
+- You may go through this website's source code - [PaperMod's exampleSite's source](https://github.com/Beryesa/PaperFE/tree/exampleSite)
 - Scroll below this page where you will find more specific details about each section.
 - Kindly go through all of the pages below to know how to configure PaperMod.
 
@@ -147,7 +147,7 @@ theme: ["PaperMod"]
 
 - Star 🌟 PaperMod's Github repository.
 - Help spread the word about PaperMod by sharing it on social media and recommending it to your friends. 🗣️
-- You can also sponsor 🏅 on [Github Sponsors](https://github.com/sponsors/adityatelange) / [Ko-Fi](https://ko-fi.com/adityatelange).
+- You can also sponsor 🏅 on [Github Sponsors](https://github.com/sponsors/Beryesa) / [Ko-Fi](https://ko-fi.com/Beryesa).
 
 ---
 
@@ -169,13 +169,13 @@ You can go through few videos which are available on YouTube for getting to know
 
 - ### [Papermod - Icons](../papermod-icons)
 
-- ### [ChangeLog](https://github.com/adityatelange/hugo-PaperMod/releases)
+- ### [ChangeLog](https://github.com/Beryesa/PaperFE/releases)
 
 ---
 
 ## Sample `config.yml`
 
-> **Example Site Structure is present here**: [exampleSite](https://github.com/adityatelange/hugo-PaperMod/tree/exampleSite/)
+> **Example Site Structure is present here**: [exampleSite](https://github.com/Beryesa/PaperFE/tree/exampleSite/)
 
 **Use appropriately**
 
@@ -309,7 +309,7 @@ menu:
       name: example.org
       url: https://example.org
       weight: 30
-# Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
+# Read: https://github.com/Beryesa/PaperFE/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 pygmentsUseClasses: true
 markup:
   highlight:

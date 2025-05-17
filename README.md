@@ -1,10 +1,10 @@
-# hugo-paperMod Example
+# PaperFE Example
 
-This repository offers an example site for [hugo-PaperMod](https://github.com/adityatelange/hugo-PaperMod)
+This repository offers an example site for [PaperFE](https://github.com/Beryesa/PaperFE)
 
 ## Install
 
-Read Wiki => [hugo-PaperMod - Installation](https://github.com/adityatelange/hugo-PaperMod/wiki/Installation)
+Read Wiki => [PaperFE - Installation](https://github.com/Beryesa/PaperFE/wiki/Installation)
 
 ## Directory Tree
 
@@ -53,5 +53,5 @@ Read Wiki => [hugo-PaperMod - Installation](https://github.com/adityatelange/hug
 │   ├── favicon.ico
 │   └── papermod-cover.png
 └── themes
-    └── hugo-PaperMod
+    └── PaperFE
 ```
