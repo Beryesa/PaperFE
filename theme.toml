@@ -2,7 +2,7 @@ name = 'PaperFE'
 license = 'MIT'
 licenselink = 'https://github.com/Beryesa/PaperFE/LICENSE'
 description = 'Paper Fabulously Extended, based on the awesome PaperMod'
-min_version = "0.125.7"
+min_version = "0.146.0"
 
 # The home page of the theme, where the source can be found
 homepage = 'https://github.com/Beryesa/PaperFE'
