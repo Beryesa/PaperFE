@@ -2,11 +2,11 @@
 title: "FAQs / How To's Guide"
 summary: We'll try to answer frequently asked qestions by users.
 date: 2021-01-20
-aliases: ["/papermod-how-to-guide"]
-tags: ["PaperMod", "Docs"]
-author: ["PaperMod Contributors"]
+aliases: ["/paperfe-how-to-guide"]
+tags: ["PaperFE", "Docs"]
+author: ["PaperFE Contributors"]
 draft: true
-aliases: [/posts/papermod/papermod-how-to]
+aliases: [/posts/paperfe/paperfe-how-to]
 weight: 3
 ---
 
@@ -23,7 +23,7 @@ By Hugo's Lookup Order, you can override any part of a theme that you want. The 
 Let's say you wish the `list` was different. All you have to do is copy the `list` template:
 
 ```shell
-your-site/themes/papermod/layouts/_defaults/list.html
+your-site/themes/paperfe/layouts/_defaults/list.html
 ```
 
 And paste it under your own `layouts` folder:
@@ -84,7 +84,7 @@ Create folder in yout project directory as
 .(site root)
 ├── config.yml
 ├── content/
-├── theme/hugo-PaperMod/
+├── theme/PaperFE/
 └── assets/
     └── css/
         └── extended/  <---
@@ -98,7 +98,7 @@ All `css` files inside `assets/css/extended` will be bundled !
 
 Linked Issues:
 
-- [Papermod Theme: How to add custom CSS?](https://discourse.gohugo.io/t/papermod-theme-how-to-add-custom-css/30165)
+- [Papermod Theme: How to add custom CSS?](https://discourse.gohugo.io/t/paperfe-theme-how-to-add-custom-css/30165)
 
 ---
 
@@ -110,7 +110,7 @@ Custom css/js can be added by way mentioned below.
 .(site root)
 ├── config.yml
 ├── content/
-├── theme/hugo-PaperMod/
+├── theme/PaperFE/
 └── layouts
     ├── partials
     │   ├── comments.html
@@ -284,13 +284,13 @@ use `align=center` to center image with captions
 
 If you are using a CDN to server assets from a different domain, search would break
 
-Why? Take a look at [fastsearch.js#L35](https://github.com/adityatelange/hugo-PaperMod/blob/fb4988cfb6d0d6e4e489f17d89f0fa618def3396/assets/js/fastsearch.js#L35).
+Why? Take a look at [fastsearch.js#L35](https://github.com/Beryesa/PaperFE/blob/fb4988cfb6d0d6e4e489f17d89f0fa618def3396/assets/js/fastsearch.js#L35).
 
 We fetch the `index.json` (where the search function looks for the keywords typed) one level up of the website `search.min.js` is hosted on.
 
 We have used this insted of assigning `baseURL` so as to work with multilingual websites ex. `example.com/fr/` and websites being placed under a subdirectory ex. `example.com/blog/`.
 
-To fix for _single_ language websites hosting assets from CDN, this you may [override](#override-theme-template) [fastsearch.js#L35](https://github.com/adityatelange/hugo-PaperMod/blob/fb4988cfb6d0d6e4e489f17d89f0fa618def3396/assets/js/fastsearch.js#L35) and placing appropriate URL as in
+To fix for _single_ language websites hosting assets from CDN, this you may [override](#override-theme-template) [fastsearch.js#L35](https://github.com/Beryesa/PaperFE/blob/fb4988cfb6d0d6e4e489f17d89f0fa618def3396/assets/js/fastsearch.js#L35) and placing appropriate URL as in
 
 ```js {linenos=true}
 xhr.open("GET", "https://example.com/index.json");

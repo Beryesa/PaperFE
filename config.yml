@@ -1,9 +1,9 @@
 # If your site is in 'https', then make sure your base url isn't written using 'http' otherwise your sitemap would
 # contain http (as opposeed to https) URLs. This would affect Google indexing of your URLs.
-baseURL: "https://adityatelange.github.io/hugo-PaperMod/"
-title: PaperMod
-copyright: "© [PaperMod Contributors](https://github.com/adityatelange/hugo-PaperMod/graphs/contributors)"
-theme: [hugo-PaperMod]
+baseURL: "https://Beryesa.github.io/PaperFE/"
+title: PaperFE
+copyright: "© [PaperFE Contributors](https://github.com/Beryesa/PaperFE/graphs/contributors)"
+theme: [PaperFE]
 
 enableInlineShortcodes: true
 enableRobotsTXT: true
@@ -12,7 +12,7 @@ buildFuture: false
 buildExpired: false
 enableEmoji: true
 pygmentsUseClasses: true
-mainsections: ["posts", "papermod"]
+mainsections: ["posts", "paperfe"]
 
 minify:
   disableXML: true
@@ -42,12 +42,12 @@ languages:
           url: tags/
           weight: 10
         - name: WiKi
-          url: https://github.com/adityatelange/hugo-PaperMod/wiki/
+          url: https://github.com/Beryesa/PaperFE/wiki/
 
   fr:
     languageName: ":fr:"
     weight: 2
-    title: PaperModL2
+    title: PaperFEL2
     taxonomies:
       category: FRcategories
       tag: FRtags
@@ -74,7 +74,7 @@ languages:
       languageAltTitle: French
       profileMode:
         enabled: true
-        title: PaperMod
+        title: PaperFE
         imageUrl: "https://raw.githubusercontent.com/googlefonts/noto-emoji/master/svg/emoji_u1f9d1_1f3fb_200d_1f4bb.svg"
         imageTitle: ProfileMode image
         # imageWidth: 120
@@ -84,12 +84,12 @@ languages:
           - name: Blog
             url: posts
           - name: Profile Mode
-            url: https://github.com/adityatelange/hugo-PaperMod/wiki/Features#profile-mode
+            url: https://github.com/Beryesa/PaperFE/wiki/Features#profile-mode
 
   fa:
     languagedirection: rtl
     weight: 3
-    title: PaperMod RTL
+    title: PaperFE RTL
     taxonomies:
       category: FAcategories
       tag: FAtags
@@ -113,8 +113,8 @@ outputs:
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  description: "Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod"
-  author: Theme PaperMod
+  description: "Theme PaperFE - https://github.com/Beryesa/PaperFE"
+  author: Theme PaperFE
   # author: ["Me", "You"] # multiple authors
 
   defaultTheme: auto
@@ -131,11 +131,11 @@ params:
   ShowPageNums: true
   ShowToc: true
   # comments: false
-  images: ["images/papermod-cover.png"]
+  images: ["images/paperfe-cover.png"]
 
   profileMode:
     enabled: false
-    title: PaperMod
+    title: PaperFE
     imageUrl: "#"
     imageTitle: my image
     # imageWidth: 120
@@ -147,32 +147,32 @@ params:
         url: tags
 
   homeInfoParams:
-    Title: "PaperMod's Demo"
+    Title: "PaperFE's Demo"
     Content: >
-      👋 Welcome to demo page of Hugo's theme PaperMod!
+      👋 Welcome to demo page of Hugo's theme PaperFE!
 
-      - **PaperMod**  is designed to be clean and simple but fast and responsive theme with useful feature-set that enhances UX.
+      - **PaperFE**  is designed to be clean and simple but fast and responsive theme with useful feature-set that enhances UX.
 
       - Feel free to show your support by giving us a star 🌟 on GitHub and sharing with your friends and social media .
 
-      - PaperMod is based on theme [Paper](https://github.com/nanxiaobei/hugo-paper/tree/4330c8b12aa48bfdecbcad6ad66145f679a430b3).
+      - PaperFE is based on theme [Paper](https://github.com/nanxiaobei/hugo-paper/tree/4330c8b12aa48bfdecbcad6ad66145f679a430b3).
 
   socialIcons:
     - name: github
       title: View Source on Github
-      url: "https://github.com/adityatelange/hugo-PaperMod"
+      url: "https://github.com/Beryesa/PaperFE"
     - name: Discord
       title: Join discord community
       url: "https://discord.gg/ahpmTvhVmp"
     - name: X
-      title: Share PaperMod on X/Twitter
-      url: "https://x.com/intent/tweet/?text=Checkout%20Hugo%20PaperMod%20%E2%9C%A8%0AA%20fast,%20clean,%20responsive%20Hugo%20theme.&url=https://github.com/adityatelange/hugo-PaperMod&hashtags=Hugo,PaperMod"
+      title: Share PaperFE on X/Twitter
+      url: "https://x.com/intent/tweet/?text=Checkout%20Hugo%20PaperFE%20%E2%9C%A8%0AA%20fast,%20clean,%20responsive%20Hugo%20theme.&url=https://github.com/Beryesa/PaperFE&hashtags=Hugo,PaperFE"
     - name: KoFi
       title: Buy me a Ko-Fi :)
-      url: "https://ko-fi.com/adityatelange"
+      url: "https://ko-fi.com/Beryesa"
 
   editPost:
-    URL: "https://github.com/adityatelange/hugo-PaperMod/tree/exampleSite/content"
+    URL: "https://github.com/Beryesa/PaperFE/tree/exampleSite/content"
     Text: "Suggest Changes" # edit text
     appendFilePath: true # to append file path to Edit link
 

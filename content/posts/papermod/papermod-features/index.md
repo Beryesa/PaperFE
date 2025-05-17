@@ -1,13 +1,13 @@
 ---
 title: "Features / Mods"
-summary: Learn About All Features in PaperMod
+summary: Learn About All Features in PaperFE
 date: 2021-01-20
 weight: 2
-aliases: ["/papermod-features"]
-tags: ["PaperMod", "Docs"]
+aliases: ["/paperfe-features"]
+tags: ["PaperFE", "Docs"]
 author: ["Aditya Telange"]
 social:
-  fediverse_creator: "@adityatelange@mastodon.social"
+  fediverse_creator: "@Beryesa@mastodon.social"
 ---
 
 ### Intro
@@ -76,7 +76,7 @@ Create a page with `archive.md` in `content` directory with following content
 │   └── posts/
 ├── static/
 └── themes/
-    └── PaperMod/
+    └── PaperFE/
 ```
 
 and add the following to it
@@ -92,7 +92,7 @@ summary: archives
 
 **Note:** Archives Layout does not support Multilingual Month Translations.
 
-ex: [archives.md](https://raw.githubusercontent.com/adityatelange/hugo-PaperMod/exampleSite/content/archives.md)
+ex: [archives.md](https://raw.githubusercontent.com/Beryesa/PaperFE/exampleSite/content/archives.md)
 
 ---
 
@@ -127,7 +127,7 @@ params:
 
 ### Profile Mode
 
-![profile](https://raw.githubusercontent.com/adityatelange/hugo-PaperMod/exampleSite/content/posts/papermod/papermod-features/images/profile.jpg)
+![profile](https://raw.githubusercontent.com/Beryesa/PaperFE/exampleSite/content/posts/paperfe/paperfe-features/images/profile.jpg)
 
 Shows Index/Home page as Full Page with Social Links and Image
 
@@ -160,7 +160,7 @@ params:
 
 ### Search Page
 
-PaperMod uses [Fuse.js Basic](https://fusejs.io/getting-started/different-builds.html#explanation-of-different-builds) for search functionality
+PaperFE uses [Fuse.js Basic](https://fusejs.io/getting-started/different-builds.html#explanation-of-different-builds) for search functionality
 
 Add the following to site config, `config.yml`
 
@@ -191,7 +191,7 @@ To hide a particular page from being searched, add it in post's frontmatter
 searchHidden: true
 ```
 
-ex: [search.md](https://raw.githubusercontent.com/adityatelange/hugo-PaperMod/exampleSite/content/search.md)
+ex: [search.md](https://raw.githubusercontent.com/Beryesa/PaperFE/exampleSite/content/search.md)
 
 > Search Page also has Key bindings:
 >

@@ -1,10 +1,10 @@
 ---
 title: "Social-Icons / Share-Icons"
-summary: List of all Icons supported by PaperMod
+summary: List of all Icons supported by PaperFE
 date: 2021-01-20
 weight: 4
-aliases: ["/papermod-icons"]
-tags: ["PaperMod", "Docs"]
+aliases: ["/paperfe-icons"]
+tags: ["PaperFE", "Docs"]
 author: ["Aditya Telange"]
 draft: true
 social:

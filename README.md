@@ -1,10 +1,10 @@
-# hugo-paperMod Example
+# PaperFE Example
 
-This repository offers an example site for [hugo-PaperMod](https://github.com/adityatelange/hugo-PaperMod)
+This repository offers an example site for [PaperFE](https://github.com/Beryesa/PaperFE)
 
 ## Install
 
-Read Wiki => [hugo-PaperMod - Installation](https://github.com/adityatelange/hugo-PaperMod/wiki/Installation)
+Read Wiki => [PaperFE - Installation](https://github.com/Beryesa/PaperFE/wiki/Installation)
 
 ## Directory Tree
 
@@ -21,18 +21,18 @@ Read Wiki => [hugo-PaperMod - Installation](https://github.com/adityatelange/hug
 │   │   ├── markdown-syntax.fr.md
 │   │   ├── markdown-syntax.md
 │   │   ├── math-typesetting.md
-│   │   ├── papermod
+│   │   ├── paperfe
 │   │   │   ├── _index.md
-│   │   │   ├── papermod-faq.md
-│   │   │   ├── papermod-features
+│   │   │   ├── paperfe-faq.md
+│   │   │   ├── paperfe-features
 │   │   │   │   ├── images
 │   │   │   │   │   ├── homeinfo.jpg
 │   │   │   │   │   ├── profile.jpg
 │   │   │   │   │   └── regular.jpg
 │   │   │   │   └── index.md
-│   │   │   ├── papermod-icons.md
-│   │   │   ├── papermod-installation.md
-│   │   │   └── papermod-variables.md
+│   │   │   ├── paperfe-icons.md
+│   │   │   ├── paperfe-installation.md
+│   │   │   └── paperfe-variables.md
 │   │   ├── placeholder-text.md
 │   │   └── rich-content.md
 │   ├── search.fr.md
@@ -51,7 +51,7 @@ Read Wiki => [hugo-PaperMod - Installation](https://github.com/adityatelange/hug
 │   ├── favicon-16x16.png
 │   ├── favicon-32x32.png
 │   ├── favicon.ico
-│   └── papermod-cover.png
+│   └── paperfe-cover.png
 └── themes
-    └── hugo-PaperMod
+    └── PaperFE
 ```

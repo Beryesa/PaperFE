@@ -1,5 +1,5 @@
 ---
-title: PaperMod
-summary: Contains posts related to `PaperMod`
-description: Contains posts related to PaperMod
+title: PaperFE
+summary: Contains posts related to `PaperFE`
+description: Contains posts related to PaperFE
 ---

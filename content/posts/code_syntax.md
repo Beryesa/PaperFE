@@ -10,7 +10,7 @@ series: ["Themes Guide"]
 ShowToc: true
 TocOpen: true
 social:
-  fediverse_creator: "@adityatelange@mastodon.social"
+  fediverse_creator: "@Beryesa@mastodon.social"
 ---
 
 ### Inline Code
@@ -82,7 +82,7 @@ This is pre text
 
 ### Code block with line numbers and <mark>highlighted</mark> lines
 
-- PaperMod supports `linenos=true` or `linenos=table`
+- PaperFE supports `linenos=true` or `linenos=table`
 
 ```html {linenos=true,hl_lines=[2,8]}
 <!DOCTYPE html>
@@ -102,7 +102,7 @@ This is pre text
 ```
 
 - <del>With `linenos=inline` line <mark>**might not** get highlighted</mark> properly.<del>
-- This issue is fixed with [045c084](https://github.com/adityatelange/hugo-PaperMod/commit/045c08496d61b1b3f9c79e69e7d3d243a526d8f3)
+- This issue is fixed with [045c084](https://github.com/Beryesa/PaperFE/commit/045c08496d61b1b3f9c79e69e7d3d243a526d8f3)
 
 ```html {linenos=inline,hl_lines=[2,8]}
 <!DOCTYPE html>

@@ -1,17 +1,17 @@
 ---
-title: "Install / Update PaperMod"
+title: "Install / Update PaperFE"
 summary: Read aboout Install and Update instructions and sampled configuration templates
 date: 2021-01-20
-series: ["PaperMod"]
+series: ["PaperFE"]
 weight: 1
-aliases: ["/papermod-installation"]
-tags: ["PaperMod", "Docs"]
+aliases: ["/paperfe-installation"]
+tags: ["PaperFE", "Docs"]
 author: ["Aditya Telange"]
 cover:
-  image: images/papermod-cover.png
+  image: images/paperfe-cover.png
   hiddenInList: true
 social:
-  fediverse_creator: "@adityatelange@mastodon.social"
+  fediverse_creator: "@Beryesa@mastodon.social"
 ---
 
 > - **We'll be using `yml/yaml` format for all examples down below, it is recommend to use `yaml` over `toml` as it is easier to read.**
@@ -33,19 +33,19 @@ social:
    - Older versions of Hugo may not support `--format yaml`
    - Read more here about [Hugo Docs's - hugo new site command](https://gohugo.io/commands/hugo_new_site/#synopsis)
 
-After you have created a new site, follow the below steps to add **PaperMod**
+After you have created a new site, follow the below steps to add **PaperFE**
 
-### Installing/Updating PaperMod
+### Installing/Updating PaperFE
 
 - Themes reside in `MyFreshWebsite/themes` directory.
-- PaperMod will be installed in `MyFreshWebsite/themes/PaperMod`
+- PaperFE will be installed in `MyFreshWebsite/themes/PaperFE`
 
 > {{< collapse summary="**Expand Method 1 - Git Clone**" >}}
 
 **INSTALL** : Inside the folder of your Hugo site `MyFreshWebsite`, run:
 
 ```bash
-git clone https://github.com/adityatelange/hugo-PaperMod themes/PaperMod --depth=1
+git clone https://github.com/Beryesa/PaperFE themes/PaperFE --depth=1
 ```
 
 You may use ` --branch v7.0` to end of above command if you want to stick to specific release.
@@ -53,7 +53,7 @@ You may use ` --branch v7.0` to end of above command if you want to stick to spe
 **UPDATE**: Inside the folder of your Hugo site `MyFreshWebsite`, run:
 
 ```bash
-cd themes/PaperMod
+cd themes/PaperFE
 git pull
 ```
 
@@ -64,7 +64,7 @@ git pull
 **INSTALL** : Inside the folder of your Hugo site `MyFreshWebsite`, run:
 
 ```bash
-git submodule add --depth=1 https://github.com/adityatelange/hugo-PaperMod.git themes/PaperMod
+git submodule add --depth=1 https://github.com/Beryesa/PaperFE.git themes/PaperFE
 git submodule update --init --recursive # needed when you reclone your repo (submodules may not get cloned automatically)
 ```
 
@@ -81,18 +81,18 @@ git submodule update --remote --merge
 
 > {{< collapse summary="**Expand Method 3 - Download an unzip**" >}}
 
-Download PaperMod source as Zip from Github Releases and extract in your themes directory at `MyFreshWebsite/themes/PaperMod`
+Download PaperFE source as Zip from Github Releases and extract in your themes directory at `MyFreshWebsite/themes/PaperFE`
 
 Direct Links:
 
-- [Master Branch (Latest)](https://github.com/adityatelange/hugo-PaperMod/archive/master.zip)
-- [v7.0](https://github.com/adityatelange/hugo-PaperMod/archive/v7.0.zip)
-- [v6.0](https://github.com/adityatelange/hugo-PaperMod/archive/v6.0.zip)
-- [v5.0](https://github.com/adityatelange/hugo-PaperMod/archive/v5.0.zip)
-- [v4.0](https://github.com/adityatelange/hugo-PaperMod/archive/v4.0.zip)
-- [v3.0](https://github.com/adityatelange/hugo-PaperMod/archive/v3.0.zip)
-- [v2.0](https://github.com/adityatelange/hugo-PaperMod/archive/v2.0.zip)
-- [v1.0](https://github.com/adityatelange/hugo-PaperMod/archive/v1.0.zip)
+- [Master Branch (Latest)](https://github.com/Beryesa/PaperFE/archive/master.zip)
+- [v7.0](https://github.com/Beryesa/PaperFE/archive/v7.0.zip)
+- [v6.0](https://github.com/Beryesa/PaperFE/archive/v6.0.zip)
+- [v5.0](https://github.com/Beryesa/PaperFE/archive/v5.0.zip)
+- [v4.0](https://github.com/Beryesa/PaperFE/archive/v4.0.zip)
+- [v3.0](https://github.com/Beryesa/PaperFE/archive/v3.0.zip)
+- [v2.0](https://github.com/Beryesa/PaperFE/archive/v2.0.zip)
+- [v1.0](https://github.com/Beryesa/PaperFE/archive/v1.0.zip)
 
 {{</ collapse >}}
 
@@ -108,12 +108,12 @@ Direct Links:
 hugo mod init YOUR_OWN_GIT_REPOSITORY
 ```
 
-- Add PaperMod in your `config.yml` file
+- Add PaperFE in your `config.yml` file
 
 ```go {linenos=true}
 module:
   imports:
-  - path: github.com/adityatelange/hugo-PaperMod
+  - path: github.com/Beryesa/PaperFE
 ```
 
 **UPDATE**:
@@ -126,32 +126,32 @@ Read more : [Hugo Docs's - HUGO MODULES](https://gohugo.io/hugo-modules/use-modu
 
 {{</ collapse >}}
 
-### Finally set theme as PaperMod in your site config
+### Finally set theme as PaperFE in your site config
 
 In `config.yml` add:
 
 ```yml {linenos=true}
-theme: ["PaperMod"]
+theme: ["PaperFE"]
 ```
 
-### Next up - Customizing PaperMod to suit your preferences.
+### Next up - Customizing PaperFE to suit your preferences.
 
 - Your site will be blank after you set up for the very first time.
-- You may go through this website's source code - [PaperMod's exampleSite's source](https://github.com/adityatelange/hugo-PaperMod/tree/exampleSite)
+- You may go through this website's source code - [PaperFE's exampleSite's source](https://github.com/Beryesa/PaperFE/tree/exampleSite)
 - Scroll below this page where you will find more specific details about each section.
-- Kindly go through all of the pages below to know how to configure PaperMod.
+- Kindly go through all of the pages below to know how to configure PaperFE.
 
 ---
 
 ## Support 🫶
 
-- Star 🌟 PaperMod's Github repository.
-- Help spread the word about PaperMod by sharing it on social media and recommending it to your friends. 🗣️
-- You can also sponsor 🏅 on [Github Sponsors](https://github.com/sponsors/adityatelange) / [Ko-Fi](https://ko-fi.com/adityatelange).
+- Star 🌟 PaperFE's Github repository.
+- Help spread the word about PaperFE by sharing it on social media and recommending it to your friends. 🗣️
+- You can also sponsor 🏅 on [Github Sponsors](https://github.com/sponsors/Beryesa) / [Ko-Fi](https://ko-fi.com/Beryesa).
 
 ---
 
-## Videos featuring PaperMod
+## Videos featuring PaperFE
 
 You can go through few videos which are available on YouTube for getting to know the creator's thoughts as well as the setup process.
 
@@ -161,21 +161,21 @@ You can go through few videos which are available on YouTube for getting to know
 
 ## Quick Links
 
-- ### [Papermod - Features](../papermod-features)
+- ### [Papermod - Features](../paperfe-features)
 
-- ### [Papermod - FAQs](../papermod-how-to)
+- ### [Papermod - FAQs](../paperfe-how-to)
 
-- ### [Papermod - Variables](../papermod-variables)
+- ### [Papermod - Variables](../paperfe-variables)
 
-- ### [Papermod - Icons](../papermod-icons)
+- ### [Papermod - Icons](../paperfe-icons)
 
-- ### [ChangeLog](https://github.com/adityatelange/hugo-PaperMod/releases)
+- ### [ChangeLog](https://github.com/Beryesa/PaperFE/releases)
 
 ---
 
 ## Sample `config.yml`
 
-> **Example Site Structure is present here**: [exampleSite](https://github.com/adityatelange/hugo-PaperMod/tree/exampleSite/)
+> **Example Site Structure is present here**: [exampleSite](https://github.com/Beryesa/PaperFE/tree/exampleSite/)
 
 **Use appropriately**
 
@@ -183,7 +183,7 @@ You can go through few videos which are available on YouTube for getting to know
 baseURL: "https://examplesite.com/"
 title: ExampleSite
 paginate: 5
-theme: PaperMod
+theme: PaperFE
 
 enableRobotsTXT: true
 buildDrafts: false
@@ -200,7 +200,7 @@ params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   title: ExampleSite
   description: "ExampleSite description"
-  keywords: [Blog, Portfolio, PaperMod]
+  keywords: [Blog, Portfolio, PaperFE]
   author: Me
   # author: ["Me", "You"] # multiple authors
   images: ["<link or path of image for opengraph, twitter-cards>"]
@@ -309,7 +309,7 @@ menu:
       name: example.org
       url: https://example.org
       weight: 30
-# Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
+# Read: https://github.com/Beryesa/PaperFE/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 pygmentsUseClasses: true
 markup:
   highlight:
