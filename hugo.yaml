@@ -1,8 +1,7 @@
 baseURL: https://example.org/
 languageCode: en-US
 title: PaperFE Example Site
-theme:
-  - github.com/adityatelange/hugo-PaperMod
+
 menus:
   main:
     - name: Home
@@ -17,6 +16,6 @@ menus:
 module:
   hugoVersion:
     extended: false
-    min: 0.125.7
+    min: 0.146.0
   imports:
     - path: github.com/adityatelange/hugo-PaperMod
