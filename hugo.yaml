@@ -25,3 +25,11 @@ module:
     min: 0.146.0
   imports:
     - path: github.com/adityatelange/hugo-PaperMod
+
+########## SEARCH ##########
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # is necessary
+########## SEARCH ##########
