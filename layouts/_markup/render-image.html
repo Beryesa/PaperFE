@@ -1,14 +1,23 @@
-{{- $src := .Destination -}}
-{{- $alt := .PlainText | safeHTML -}}
-{{- $title := .Title | safeHTML -}}
+{{- $u := urls.Parse .Destination }}
+{{- $src := $u.String }}
 
-{{- $res := .PageInner.Resources.GetMatch (printf "**%s" $src) -}}
-{{- if $res -}}
-  {{- $src = $res.RelPermalink -}}
-{{- else if strings.HasPrefix $src "/" -}}
-  {{- $src = printf "%s%s" site.BaseURL $src -}}
-{{- end -}}
+{{- if or (not $u.IsAbs) (and $u.IsAbs (strings.HasPrefix $u.Path "/") (not (strings.HasPrefix $u.String "http"))) }}
 
-<img src="{{ $src | safeURL }}"
-     {{- with .Text }} alt="{{ . }}"{{ end -}}
-     {{- with .Title }} title="{{ . }}"{{ end -}}>
+  {{- $path := strings.TrimPrefix "./" $u.Path }}
+
+  {{- $res := or (.PageInner.Resources.Get $path) (resources.Get $path) }}
+
+  {{- if $res }}
+    {{- $src = $res.RelPermalink }}
+  {{- else if strings.HasPrefix $u.Path "/" }}
+    {{- $src = printf "%s%s" .Page.Site.BaseURL $u.Path }}
+  {{- end }}
+
+  {{- with $u.RawQuery }}
+    {{- $src = printf "%s?%s" $src . }}
+  {{- end }}
+
+  {{- with $u.Fragment }}
+    {{- $src = printf "%s#%s" $src . }}
+  {{- end }}
+{{- end }}
