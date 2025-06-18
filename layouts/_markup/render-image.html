@@ -1,0 +1,14 @@
+{{- $src := .Destination -}}
+{{- $alt := .PlainText | safeHTML -}}
+{{- $title := .Title | safeHTML -}}
+
+{{- $res := .PageInner.Resources.GetMatch (printf "**%s" $src) -}}
+{{- if $res -}}
+  {{- $src = $res.RelPermalink -}}
+{{- else if strings.HasPrefix $src "/" -}}
+  {{- $src = printf "%s%s" site.BaseURL $src -}}
+{{- end -}}
+
+<img src="{{ $src | safeURL }}"
+     {{- with .Text }} alt="{{ . }}"{{ end -}}
+     {{- with .Title }} title="{{ . }}"{{ end -}}>
