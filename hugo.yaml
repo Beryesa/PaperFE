@@ -1,3 +1,5 @@
+# These parameters specify the default values set by this customization theme for all user sites.
+# For a clean example see the exampleSite branch instead
 baseURL: https://example.org/
 languageCode: en-GB
 DefaultContentLanguage: "en"

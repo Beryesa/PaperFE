@@ -7,7 +7,6 @@ on:
       - "LICENSE"
       - "README.md"
     branches:
-      - master
       - exampleSite
   workflow_dispatch:
     # manual run
